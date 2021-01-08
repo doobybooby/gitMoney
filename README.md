@@ -6,12 +6,12 @@ Team 1
 *  Shiven Nayee
 *  Janelia Thompson
 
-// Drop bar
+// backend, drop bars
 * Eltan Khiyaev
 * Jason Orr
 * Henry
 
-// App
+// App controller
 * Willie Munoz
 * Doobin Lee
 * Marvin Thompson(TA)
