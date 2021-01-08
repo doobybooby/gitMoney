@@ -1,5 +1,6 @@
 # gitMoney
-Team 1
+Team 1 
+* Marvin Thompson(TA)
 
 // front end, images, colors, etc...
 *  Annie He
@@ -14,4 +15,4 @@ Team 1
 // App controller
 * Willie Munoz
 * Doobin Lee
-* Marvin Thompson(TA)
+
