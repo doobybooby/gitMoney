@@ -1,8 +1,6 @@
 # gitMoney
 Team 1
 
-* Doobin Lee
-
 // front end, images, colors, etc...
 *  Annie He
 *  Shiven Nayee
