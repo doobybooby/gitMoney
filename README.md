@@ -10,7 +10,7 @@ Team 1
 // backend, list, arrays, make data, organize
 * Eltan Khiyaev
 * Jason Orr
-* Henry
+* Henry Carpio
 
 // App controller, javascript, math, translate
 * Willie Munoz
