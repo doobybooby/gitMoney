@@ -3,11 +3,17 @@ Team 1
 
 * Doobin Lee
 
-* Eltan Khiyaev
+// front end, images, colors, etc...
 *  Annie He
-*  Willie Munoz
-*  Janelia Thompson
-*  Jason Orr
-*  Henry Carpio
 *  Shiven Nayee
-*  Marvin Thompson(TA)
+*  Janelia Thompson
+
+// Drop bar
+* Eltan Khiyaev
+* Jason Orr
+* Henry
+
+// App
+* Willie Munoz
+* Doobin Lee
+* Marvin Thompson(TA)
