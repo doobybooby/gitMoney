@@ -63,7 +63,6 @@ body {
 .budget__title {
   font-size: 18px;
   text-align: center;
-  margin-bottom: 10px;
   font-weight: 300;
 }
 
@@ -71,7 +70,6 @@ body {
   font-weight: 300;
   font-size: 46px;
   text-align: center;
-  margin-bottom: 25px;
   letter-spacing: 2px;
 }
 
@@ -82,7 +80,6 @@ body {
 }
 
 .budget__income {
-  margin-bottom: 10px;
   background-color: #2c65cf;
 }
 
@@ -330,4 +327,33 @@ h2 {
 .clear-button:hover {
     background-color: #888888;
     color: white;
+  }
+  .goal {
+    padding:8px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing:1px;
+  
+  }
+  .SAVINGS{
+    font-family: Open Sans;
+   text-align:center;
+    font-size: 15px;
+    margin-bottom:30px
+  }
+  .Savings_value{
+    margin-left:25%;
+    width: 50%;
+    padding: 10px;
+  }
+  .Save-button{
+    text-transform: uppercase;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0;
+    background-color: white;
+    padding: 12px;
+    transition-duration: 0.4s;
+    margin-bottom:30px;
+    
   }
