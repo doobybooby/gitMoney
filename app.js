@@ -206,6 +206,9 @@ var UIController = (function () {
         dateLabel: '.budget__title--month'
     };
 
+    //updateChart(document.querySelector(DOMstrings.incomeLabel), document.querySelector(DOMstrings.expenseLabel));
+
+
     var formatNumber = function(num, type){
         var numSplit,int,dec;
 
