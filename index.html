@@ -10,7 +10,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
   <link type="text/css" rel="stylesheet" href="style.css" />
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -23,6 +25,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
+      <img src = "budgetIcon.jpeg" style = "width:50px;height:50px;padding: 5px;">
       <a class="navbar-brand" href="index.html">GitMoney</a>
       <button
         class="navbar-toggler"
@@ -71,11 +74,14 @@
   </nav>
   <div class="top">
     <div class="budget">
+    <div class = "budgetTitleValue">
       <div class="budget__title">
         Available Budget in <span class="budget__title--month">%Month%</span>:
       </div>
       
       <div class="budget__value">+ 2,345.64</div>
+    </div>
+    <div class = "piChartIncomeExpense">
       <div class="chart"></div> 
       <div class="budget__income clearfix">
         <div class="budget__income--text">Income</div>
@@ -92,10 +98,11 @@
           <div class="budget__expenses--percentage">45%</div>
         </div>
       </div>
-      <div style=background-color:rgb(48,128,48) class="goal">
+      <div class = "savings" class="goal">
         <div class="budget__income--text">Savings</div>
         <div class='goal_value'> 0.00</div>
-        </div>
+      </div>
+    </div>
     </div>
   </div>
   
@@ -103,14 +110,19 @@
     <div class="add">
       <div class="add__container">
         <select class="add__type">
-          <option value="inc">Income</option>
- 						<option value="exp">Expense</option>
+          <option value="inc">+</option>
+ 						<option value="exp">-</option>
         </select>
-        <input type="text" class="add__description" placeholder="Add description" />
         <input type="number" step="50" class="add__value" placeholder="Value" />
+        <input type="text" class="add__description" placeholder="Add description" />
         <button class="add__btn" onclick="refreshPage()">
           <i class="ion-ios-checkmark-outline"></i>
         </button>
+        <!-- <div class = "clearAllButton">
+          <button class="add__btn" onclick="refreshPage()">
+            <button onclick="clearEverything()" class="clear-button">Clear all</button>
+          </button>
+        </div> -->
       </div>
     </div>
 
@@ -131,16 +143,27 @@
         </div>
       </div>
     </div>
+    <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
+  <div class = "footerDiv">
+    <div class='Saving_div'>
+     <h5 calss = 'SAVINGS'> Want to buy a car? Wan to buy a house? Start budgeting!</h5>
+      <div class = "userSavingDesire">
+      <input class='Savings_value' placeholder="Git Budgeting!"></input>
+      <button class="btn"> 
+        <i class="ion-ios-checkmark-outline"></i>
+      </button>
+      </div>
+    </div>
+      <div class = 'savingButtonAlignment'>        
+      <!-- <input class='Savings_value'></input>
+      <button class='Save-button'>Click to Set a goal!</button> -->
+    </div>
+  </div>
 
     
-    <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
   </div>
 </div>
-<div class='Saving_div'>
-<h5 class='SAVINGS'> Have a savings goal? See how much you have to save to reach it in one Year </h5>
-<input class='Savings_value'></input>
-<button class='Save-button'>Click to Set a goal!</button>
-</div>
+
 
   <script src="app.js"></script>
   <script src="chart.js"></script>
@@ -154,6 +177,10 @@
         window.location.reload();
       }
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
 
 
