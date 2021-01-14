@@ -14,7 +14,7 @@ chartE1.appendChild(canvas);
 const ctx = canvas.getContext("2d");
 
 //sets line width
-ctx.lineWidth = 8;
+ctx.lineWidth = 15;
 //sets radius of arc
 const R = 40;
 
