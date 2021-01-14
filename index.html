@@ -119,7 +119,7 @@
         </select>
         <input type="number" step="50" class="add__value" placeholder="Value" />
         <input type="text" class="add__description" placeholder="Add description" />
-        <button class="add__btn" onclick="refreshPage()">
+        <button class="add__btn" onclick="updateChart()">
           <i class="ion-ios-checkmark-outline"></i>
         </button>
         <!-- <div class = "clearAllButton">
@@ -193,9 +193,25 @@
 			crossorigin="anonymous"
 		></script>
     <script>
-      function refreshPage() {
-        window.location.reload();
-      }
+      function updateChart() {
+        //Parsing data, removing unecessary characters and turning into integer for income
+        let rawIncome = document.getElementsByClassName("budget__income--value")[0].textContent;
+        let income = parseInt(rawIncome.slice(2).replace(',',''));
+  
+        //Parsing data, removing unecessary characters and turning into integer for expenses
+        let rawExpenses = document.getElementsByClassName("budget__expenses--value")[0].textContent;
+        let expenses = parseInt(rawExpenses.slice(2).replace(',',''));
+  
+        //clears rectangle behind chart
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        //defines ratio of arc from total income/expenses
+        let ratio = income / (income + expenses);
+        //draws income arc
+        drawCircle("#2c65cf", -ratio, true);
+        //draws expenses arc
+        drawCircle("#f7261f", 1 - ratio, false);
+        console.log(income, expenses);
+      }     
     </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
