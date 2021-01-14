@@ -45,7 +45,7 @@ body {
 .top {
   height: 40vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("back.png");
+    url("PigCoins.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -250,10 +250,12 @@ h2 {
 .icome__title {
   color: #28b9b5;
   font-size: 20px;
+  text-align: center;
 }
 .expenses__title {
   color: #ff5049;
   font-size: 20px;
+  text-align:center;
 }
 
 .item {
