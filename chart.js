@@ -14,7 +14,7 @@ chartE1.appendChild(canvas);
 const ctx = canvas.getContext("2d");
 
 //sets line width
-ctx.lineWidth = 8;
+ctx.lineWidth = 15;
 //sets radius of arc
 const R = 40;
 
@@ -27,15 +27,26 @@ ctx.arc(canvas.width/2, canvas.height/2, R, 0, ratio * 2 * Math.PI, anticlockwis
 ctx.stroke();
 }
 
-function updateChart(income, outcome) {
+//Parsing data, removing unecessary characters and turning into integer for income
+let rawIncome = document.getElementsByClassName("budget__income--value")[0].textContent;
+let income = parseInt(rawIncome.slice(2).replace(',',''));
+
+//Parsing data, removing unecessary characters and turning into integer for expenses
+let rawExpenses = document.getElementsByClassName("budget__expenses--value")[0].textContent;
+let expenses = parseInt(rawExpenses.slice(2).replace(',',''));
+
+
+function updateChart(income, expenses) {
     //clears rectangle behind chart
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     //defines ratio of arc from total income/expenses
-    let ratio = income / (income + outcome);
+    let ratio = income / (income + expenses);
     //draws income arc
     drawCircle("#376E6F", -ratio, true);
     //draws outcome arc
     drawCircle("#E98074", 1 - ratio, false);
+    console.log(income, expenses);
 }
 
-updateChart(50000,10000)
+//Executes update chart 
+document.querySelector(".add__btn").addEventListener("click", updateChart(income, expenses));
