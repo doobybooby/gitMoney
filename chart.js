@@ -33,9 +33,9 @@ function updateChart(income, outcome) {
     //defines ratio of arc from total income/expenses
     let ratio = income / (income + outcome);
     //draws income arc
-    drawCircle("#2c65cf", -ratio, true);
+    drawCircle("#376E6F", -ratio, true);
     //draws outcome arc
-    drawCircle("#f7261f", 1 - ratio, false);
+    drawCircle("#E98074", 1 - ratio, false);
 }
 
 updateChart(50000,10000)

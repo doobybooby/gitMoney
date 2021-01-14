@@ -10,10 +10,65 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
   <link type="text/css" rel="stylesheet" href="style.css" />
-  <title>Budget App</title>
+  
+  <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+  <title>GitMoney</title>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">GitMoney</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chart</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a> -->
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="top">
     <div class="budget">
       <div class="budget__title">
@@ -37,15 +92,19 @@
           <div class="budget__expenses--percentage">45%</div>
         </div>
       </div>
+      <div style=background-color:#DA7B93 class="goal">
+        <div class="budget__income--text">Savings</div>
+        <div class='goal_value'> 0.00</div>
+        </div>
     </div>
   </div>
-
+  
   <div class="bottom">
     <div class="add">
       <div class="add__container">
         <select class="add__type">
-          <option value="inc" selected>Income</option>
-          <option value="exp">Outcome</option>
+          <option value="exp">Income</option>
+ 						<option value="exp">Expense</option>
         </select>
         <input type="text" class="add__description" placeholder="Add description" />
         <input type="number" step="50" class="add__value" placeholder="Value" />
@@ -76,9 +135,20 @@
     
     <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
   </div>
+</div>
+<div class='Saving_div'>
+<h1 class='SAVINGS'> Have a savings goal? See how much you have to save to reach it in one year! </h1>
+<input class='Savings_value'></input>
+<button class='Save-button'>Click to Set a goal!</button>
+</div>
 
   <script src="app.js"></script>
   <script src="chart.js"></script>
+  <script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"
+		></script>
 </body>
 
 </html>
