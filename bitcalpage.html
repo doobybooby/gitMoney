@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link type="text/css" rel="stylesheet" href="calcStyles.css" />
+  <title>Crypto-Calculator</title>
+  
+</head>
+
+  <body>
+    <div class="top">
+      <div class="cryptoResult--class">
+
+        <div class="cryptoResultClass__title">
+          Wallet Amount in <span class="cryptoResult__title--month">%Month%</span>:
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <img src = "budgetIcon.jpeg" style = "width:50px;height:50px;padding: 5px;">
+            <a class="navbar-brand" href="index.html">GitMoney</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="bitcalpage.html">Calculator</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Chart</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a> -->
+                  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+<!--Show Results Section-->
+
+  <h3>Wallet Total ($)</h3>
+  <input type="text" id="calcResult"/>
+
+<br>
+
+
+        <div class="cryptoWalletTotal__value">$ 0.00</div>
+
+        <div class="gain_Loss--Class clearfix">
+          <div class="gain_Loss--text">Gain/LOSS (BTC)</div>
+          <div class="right">
+            <div class="gain_Loss--value"> 0.00</div>
+            <div class="gain_Loss--percentage">&nbsp;</div>
+          </div>
+        </div>
+
+        <div class="profit_Loss--Class clearfix">
+          <div class="profit_Loss--text">PROFIT/LOSS ($)</div>
+          <div class="right clearfix">
+            <div class="profit_Loss--value"> $0.00</div>
+            <div class="profit_Loss--percentage"></div>
+          </div>
+        </div>
+
+      </div> <!--END cryptoResult--class -->
+    </div><!--END top -->
+
+    <div class="bottom">
+
+      <div class="crypto_Currency__Option--class">
+        <div class="crypto_Currency__Option--container">
+          <select class="crypto__type__class">
+            <option value="btc_val" selected>BitCoin (BTC)</option>
+            <option value="crypto_val">Crypto..</option>
+          </select><select class="currency__type__class">
+            <option value="exp...curr-us" selected>US ($)</option>
+            <option value="exp...cur-currency">Currency</option>
+          </select>
+          
+          <!-- <input type="" class="add__value" placeholder="BTC" /> -->
+          
+        </div>
+      </div>
+
+      <div class="container clearfix">
+          <div class="prev__cryptoex_class">
+            <h2 class="prev__cryptoex_title">Previous Crypto ExRate</h2>
+
+            <div class="prev__cryptoex_input">
+              
+              <input type="text" id="inputprev__cryptoex" placeholder="eg. $30,000" />
+              
+            </div>
+          </div>
+
+          <div class="today__cryptoex_class">
+            <h2 class="today__cryptoex_title">Today's Crypto ExRate</h2>
+
+            <div class="today__cryptoex_input">
+
+              <input type="text" id="inputtoday__cryptoex" placeholder="Exchange Rate (BTC)" />
+              
+            </div>
+          </div>
+
+          <div class="prev__curr_amnt_class">
+            <h2 class="prev__curr_amnt_title">Previous ($) Amount</h2>
+    
+            <div class="prev__curr_amnt_input">
+              
+              <input type="text" id="inputprev__curr_amnt" placeholder="eg. $100" />
+              
+            </div>
+          </div>
+            
+          <div class="today__curr_amnt_class">
+            <h2 class="today__curr_amnt_title">Current ($) Amount)</h2>
+    
+            <div class="today__curr_amnt_input">
+    
+              <input type="text" id="inputtoday__curr_amnt" placeholder="(same as prev. ($)" />
+              
+            </div>
+          </div>
+
+        </div> <!--END container clearfix  -->
+     
+
+        <!-- <div class="calc__btn"> -->
+      <center><button onclick="calc__func()">CALCULATE</button></center>
+        <!-- </div> -->
+
+       <!-- <i class="ion-ios-checkmark-outline"></i> -->
+      <br></br>
+      <center><button onclick="clearEverything()" class="clear-button">Clear All</button></center>
+
+    </div> <!--END botton  -->
+    
+    <script src="calcApp.js"></script>
+   
+  </body>
+
+</html>
