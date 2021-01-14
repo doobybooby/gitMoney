@@ -42,9 +42,9 @@ function updateChart(income, expenses) {
     //defines ratio of arc from total income/expenses
     let ratio = income / (income + expenses);
     //draws income arc
-    drawCircle("#2c65cf", -ratio, true);
-    //draws expenses arc
-    drawCircle("#f7261f", 1 - ratio, false);
+    drawCircle("#376E6F", -ratio, true);
+    //draws outcome arc
+    drawCircle("#E98074", 1 - ratio, false);
     console.log(income, expenses);
 }
 
