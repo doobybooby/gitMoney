@@ -36,17 +36,25 @@ let rawExpenses = document.getElementsByClassName("budget__expenses--value")[0].
 let expenses = parseInt(rawExpenses.slice(2).replace(',',''));
 
 
-function updateChart(income, expenses) {
+function updateChart() {
+    //Parsing data, removing unecessary characters and turning into integer for income
+    let rawIncome = document.getElementsByClassName("budget__income--value")[0].textContent;
+    let income = parseInt(rawIncome.slice(2).replace(',',''));
+
+    //Parsing data, removing unecessary characters and turning into integer for expenses
+    let rawExpenses = document.getElementsByClassName("budget__expenses--value")[0].textContent;
+    let expenses = parseInt(rawExpenses.slice(2).replace(',',''));
+
     //clears rectangle behind chart
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     //defines ratio of arc from total income/expenses
     let ratio = income / (income + expenses);
     //draws income arc
-    drawCircle("#376E6F", -ratio, true);
-    //draws outcome arc
-    drawCircle("#E98074", 1 - ratio, false);
+    drawCircle("#2c65cf", -ratio, true);
+    //draws expenses arc
+    drawCircle("#f7261f", 1 - ratio, false);
     console.log(income, expenses);
 }
 
 //Executes update chart 
-document.querySelector(".add__btn").addEventListener("click", updateChart(income, expenses));
+//document.getElementById('btnID').onclick = updateChart()
