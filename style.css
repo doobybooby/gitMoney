@@ -291,6 +291,7 @@ h2 {
 
 .item__description {
   float: left;
+  color: grey;
 }
 
 .item__value {
