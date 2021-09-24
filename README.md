@@ -4,7 +4,7 @@ Eight Tech Talent Pipeline participants created a budget calculator with a stock
 
 ## Video
 
-![alt text](gitMoney.mov "gitMoney website video")
+![alt text](gitMoney.gif "gitMoney website video")
 
 ## Contributors
 
