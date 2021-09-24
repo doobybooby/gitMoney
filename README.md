@@ -2,7 +2,7 @@
 
 Eight Tech Talent Pipeline participants created a budget calculator with a stock to not only analyze the flow of the money, but also to see well-known companies' stocks.
 
-## Video
+## GIF
 
 ![alt text](gitMoney.gif "gitMoney website video")
 
