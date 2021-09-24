@@ -1,13 +1,19 @@
 # gitMoney
-Team 1 
-* Marvin Thompson(TA)
 
-*  Annie He
-*  Shiven Nayee
-*  Janelia Thompson
+Eight Tech Talent Pipeline participants created a budget calculator with a stock to not only analyze the flow of the money, but also to see well-known companies' stocks.
+
+## Video
+
+![alt text](gitMoney.mov "gitMoney website video")
+
+## Contributors
+
+* Marvin Thompson(TA)
+* Annie He
+* Shiven Nayee
+* Janelia Thompson
 * Eltan Khiyaev
 * Jason Orr
 * Henry Carpio
 * Willie Munoz
 * Doobin Lee
-
