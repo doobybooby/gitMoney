@@ -1,6 +1,6 @@
 # gitMoney
 
-Eight Tech Talent Pipeline participants created a budget calculator website that not only analyzes the flow of the money, but also to see well-known companies' stocks.
+Eight coding bootcamp participants created a budget calculator website that not only analyzes the flow of the money, but also to see well-known companies' stocks.
 
 ## GIF
 
