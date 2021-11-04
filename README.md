@@ -16,4 +16,4 @@ Eight coding bootcamp participants created a budget calculator website that not 
 * Jason Orr
 * Henry Carpio
 * Willie Munoz
-* Doobin
+* Doobin Lee
