@@ -9,5 +9,5 @@ Team 1
 * Jason Orr
 * Henry Carpio
 * Willie Munoz
-* Doobin Lee
+* Doobin L.
 
