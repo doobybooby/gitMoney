@@ -118,17 +118,17 @@ body {
   border-radius: 25px;
 }
 .savings{
-  background-color: #376E6F;
+  background-color: #f99e1c;
   color: white;
 }
 
 .budget__income {
   margin-bottom: 10px;
-  background-color: #37526d;
+  background-color: #248e38;
 }
 
 .chart {
- text-align: center;
+  text-align: center;
 }  
 
 .budget__expenses {
@@ -172,7 +172,7 @@ body {
 .add {
   padding: 14px;
   border-bottom: 1px solid #e7e7e7;
-  background-color: #2f4454;
+  background-color: #248e38;
 }
 
 .add__container {
