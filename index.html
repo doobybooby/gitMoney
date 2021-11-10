@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Header -->
 <head>
   <meta charset="UTF-8" />
   <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -41,11 +42,19 @@
   </style>
 </head>
 
+<!-- Body  -->
 <body>
+
+  <!-- Nav Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
+      <!-- Logo -->
       <img src = "./images/budgetIcon.jpeg" style = "width:50px;height:50px;padding: 5px;">
+      
+      <!-- Title -->
       <a class="navbar-brand" href="index.html">GitMoney</a>
+      
+      <!-- Drop-Down -->
       <button
         class="navbar-toggler"
         type="button"
@@ -54,9 +63,10 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+        >
+      <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -68,69 +78,65 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Chart</a>
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a> -->
-            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul> -->
         </ul>
       </div>
+
     </div>
   </nav>
+
+  <!-- Banner -->
   <div class="top">
     <div class="budget">
-    <div class = "budgetTitleValue">
-      <div class="budget__title">
-        Available Budget in <span class="budget__title--month">%Month%</span>:
-      </div>
-      
-      <div class="budget__value">+ 2,345.64</div>
-    </div>
-    <div class = "piChartIncomeExpense">
-      <div class="chart"></div> 
-      <div class="budget__income clearfix">
-        <div class="budget__income--text">Income</div>
-        <div class="right">
-          <div class="budget__income--value">+ 4,300.00</div>
-          <div class="budget__income--percentage">&nbsp;</div>
-        </div>
+
+      <div class = "budgetTitleValue">
+        <p class="budget__title"> Empower Yourself - <span class="budget__title--month">%Month%</span> </p>
+        <div class="budget__value">+ 2,345.64</div>
       </div>
 
-      <div class="budget__expenses clearfix">
-        <div class="budget__expenses--text">Expenses</div>
-        <div class="right clearfix">
-          <div class="budget__expenses--value">- 1,954.36</div>
-          <div class="budget__expenses--percentage">45%</div>
+      <!-- Cash flow Display -->
+      <div class = "piChartIncomeExpense">
+
+        <!-- Pi chart. Invisible until triggered  -->
+        <div class="chart">
+
         </div>
-      </div>
-      <div class = "savings" class="goal">
-        <div class="budget__income--text">Savings</div>
-        <div class='goal_value'> 0.00</div>
-      </div>
-    </div>
-    </div>
-  </div>
+
+        <!-- Income -->
+        <div class="budget__income clearfix">
+          <div class="budget__income--text">Income: </div>
+          <div class="right">
+            <div class="budget__income--value"> 4,300.00</div>
+            <div class="budget__income--percentage">&nbsp;</div>
+          </div>
+        </div>
+
+        <!-- Expenses -->
+        <div class="budget__expenses clearfix">
+          <div class="budget__expenses--text">Expenses</div>
+          <div class="right clearfix">
+            <div class="budget__expenses--value">- 1,954.36</div>
+            <div class="budget__expenses--percentage">45%</div>
+          </div>
+        </div>
+
+        <!-- Savings -->
+        <div class = "savings" class="goal">
+          <div class="budget__income--text">Savings</div>
+          <div class='goal_value'> 0.00</div>
+        </div>
+
+      </div> <!-- End of Cashflow-->
+    </div> <!-- End of Budget-->
+  </div> <!-- End of Banner-->
   
+  <!-- Inputs -->
   <div class="bottom">
+
     <div class="add">
       <div class="add__container">
         <select class="add__type">
           <option value="inc">+</option>
- 						<option value="exp">-</option>
+          <option value="exp">-</option>
         </select>
         <input type="number" step="50" class="add__value" placeholder="Value" />
         <input type="text" class="add__description" placeholder="Add description" />
@@ -145,59 +151,63 @@
       </div>
     </div>
 
+
+    <!-- Income/Expense Table -->
     <div class="container clearfix">
+
+      <!-- Income -->
       <div class="income">
         <h2 class="icome__title">Income</h2>
-
         <div class="income__list">
-          
         </div>
       </div>
 
+      <!-- Expense -->
       <div class="expenses">
         <h2 class="expenses__title">Expenses</h2>
-
         <div class="expenses__list">
-         
+        </div>
+      </div>
+
+    </div> <!-- End of Income/Expense Table-->
+
+    <!-- Clear All -->
+    <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
+
+
+    <div class = "footerDiv">
+      <div class='Saving_div'>
+        <h5 calss = 'SAVINGS'> Want to buy a car? Want to buy a house? Start budgeting now!</h5>
+        <div class = "userSavingDesire">
+          <input class='Savings_value' placeholder="Git Budgeting!"></input>
+          <button class="btn"> 
+            <i class="ion-ios-checkmark-outline"></i>
+          </button>
+        </div>
+      </div>
+      <div class = 'savingButtonAlignment'>        
+        <!-- <input class='Savings_value'></input>
+        <button class='Save-button'>Click to Set a goal!</button> -->
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="ticker-wrap">
+      <div class="ticker" >
+        <div class="ticker_item" id="aapl">
+          Lorem ipsum dolor sit amet
+        </div>
+        <div class="ticker_item" id="fb">
+          Lorem ipsum dolor sit amet
+        </div>
+        <div class="ticker_item" id="snap">
+          Lorem ipsum dolor sit amet
         </div>
       </div>
     </div>
-    <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
-  <div class = "footerDiv">
-    <div class='Saving_div'>
-     <h5 calss = 'SAVINGS'> Want to buy a car? Want to buy a house? Start budgeting now!</h5>
-      <div class = "userSavingDesire">
-      <input class='Savings_value' placeholder="Git Budgeting!"></input>
-      <button class="btn"> 
-        <i class="ion-ios-checkmark-outline"></i>
-      </button>
-      </div>
-    </div>
-      <div class = 'savingButtonAlignment'>        
-      <!-- <input class='Savings_value'></input>
-      <button class='Save-button'>Click to Set a goal!</button> -->
-    </div>
-  </div>
-
-    
-  </div>
-</div>
-
-<footer>
-  <div class="ticker-wrap">
-    <div class="ticker" >
-      <div class="ticker_item" id="aapl">
-        Lorem ipsum dolor sit amet
-      </div>
-      <div class="ticker_item" id="fb">
-        Lorem ipsum dolor sit amet
-      </div>
-      <div class="ticker_item" id="snap">
-        Lorem ipsum dolor sit amet
-      </div>
-    </div>
-  </div>
-
 
   <script src="app.js"></script>
   <script src="scrollingticker.js"></script>
@@ -228,16 +238,10 @@
         console.log(income, expenses);
       }     
     </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  </footer>
 </body>
-
-
-  
-</footer>
-
-
-
 </html>
