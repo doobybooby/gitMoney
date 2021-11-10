@@ -4,7 +4,7 @@ Eight coding bootcamp participants created a budget calculator website that not 
 
 ## GIF
 
-![alt text](gitMoney.gif "gitMoney website video")
+![alt text](./images/gitMoney.gif "gitMoney website video")
 
 ## Contributors
 
@@ -16,4 +16,4 @@ Eight coding bootcamp participants created a budget calculator website that not 
 * Jason Orr
 * Henry Carpio
 * Willie Munoz
-* Doobin testing
+* Doobin Lee
