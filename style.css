@@ -27,9 +27,6 @@ body {
   animation-fill-mode: forwards;
 }
 
-.right {
-  float: right;
-}
 .red {
   color: hsl(2, 92%, 51%) !important;
 }
@@ -52,7 +49,7 @@ body {
 /* Upper Section of the page which contain the graph */
 
 
-.top {
+.banner {
   height: 40vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url("./images/PigCoins.jpg");
@@ -125,6 +122,10 @@ body {
 .budget__income {
   margin-bottom: 10px;
   background-color: #248e38;
+}
+
+.user_input_value {
+  float: below;
 }
 
 .chart {
@@ -220,7 +221,7 @@ body {
   background: none;
   border: none;
   color: #FFFF;
-  background-color: #2f4454;
+  background-color: #248e38 ;
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -286,7 +287,7 @@ h2 {
   border-top: 1px solid #e7e7e7;
 }
 .item:nth-child(even) {
-  background-color: #f7f7f7;
+  background-color: #71cf82;
 }
 
 .item__description {
@@ -372,14 +373,14 @@ h2 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 0;
   border-radius: 25px;
-  background-color:#2F4454;
+  background-color:#965903;
   transition-duration: 0.4s;
   font-size: 12px;
   padding: 12px 15px;
   margin-right: 10px;
 }
 .clear-button:hover {
-    background-color: #1C3334;
+    background-color: #27a4aa;
     color: white;
   }
 .Savings_value{
