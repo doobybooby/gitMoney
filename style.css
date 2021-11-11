@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.piChartIncomeExpense{
+.cashflow_display{
   display: flex;
   flex-direction: row;
   flex-flow: space-evenly;
@@ -79,7 +79,7 @@ body {
   text-transform: uppercase;
   border-radius: 25px;
 }
-.budget {
+.display {
   position: absolute;
   /* width: 350px; */
   top: 50%;
@@ -88,7 +88,7 @@ body {
   color: rgb(192, 188, 188);
 }
 
-.budget__title {
+.banner_title {
   font-size: 18px;
   text-align: center;
   margin-bottom: 10px;
@@ -96,7 +96,7 @@ body {
   color: white;
 }
 
-.budget__value {
+.current_balance {
   font-weight: 300;
   font-size: 46px;
   text-align: center;
