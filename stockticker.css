@@ -8,6 +8,7 @@
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.9);
   padding-left: 100%;
+  box-sizing: content-box;
 }
 
 .ticker {
@@ -22,8 +23,8 @@
   animation-timing-function: linear;
   -webkit-animation-name: ticker;
   animation-name: ticker;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
 }
 
 .ticker_item {
